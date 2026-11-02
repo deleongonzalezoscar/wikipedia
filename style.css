@@ -1,3 +1,4 @@
+```css
 /* DISEÑO GENERAL */
 
 * {
@@ -110,7 +111,6 @@ main {
     margin-left: 174px;
     padding: 20px 25px 35px;
     background-color: white;
-    overflow: auto;
 }
 
 /* TÍTULO PRINCIPAL */
@@ -131,25 +131,33 @@ main > h1 + p {
     margin: 0 0 18px;
 }
 
+/* DISTRIBUCIÓN DE LA FICHA Y EL ARTÍCULO */
+
+.contenido {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
 /* FICHA DE MARIANO */
 
-main > div {
-    float: right;
-    clear: right;
+.ficha {
+    flex: 0 0 280px;
     width: 280px;
-    max-width: 100%;
-    box-sizing: border-box;
+    min-width: 0;
     background-color: white;
     border: 1px solid #a2a9b1;
     padding: 10px;
-    margin: 0 0 20px 20px;
+    margin: 0;
     font-size: 14px;
     line-height: 1.5;
 }
 
 /* TÍTULO MARIANO DÍAZ */
 
-main > div h3 {
+.ficha h3 {
     text-align: center;
     background-color: #e3c16f;
     border: 1px solid #c8a94f;
@@ -159,7 +167,7 @@ main > div h3 {
 
 /* FOTO */
 
-main > div img {
+.ficha img {
     display: block;
     width: 200px;
     max-width: 100%;
@@ -169,7 +177,7 @@ main > div img {
 
 /* TÍTULOS DE LA FICHA */
 
-main > div h4 {
+.ficha h4 {
     background-color: #e3c16f;
     border: 1px solid #c8a94f;
     padding: 5px;
@@ -178,114 +186,34 @@ main > div h4 {
 
 /* TEXTO DE LA FICHA */
 
-main > div p {
+.ficha p {
     margin: 8px 0;
+}
+
+.ficha ul {
+    padding-left: 25px;
+}
+
+/* ARTÍCULO A LA IZQUIERDA */
+
+.texto {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+}
+
+/* PÁRRAFOS DEL ARTÍCULO */
+
+.texto p {
+    margin: 0 0 12px;
 }
 
 /* TÍTULOS DE LOS APARTADOS */
 
-main h2 {
+.texto h2 {
     font-family: Georgia, serif;
     font-size: 23px;
     font-weight: normal;
     border-bottom: 1px solid #a2a9b1;
     margin-top: 25px;
-    padding-bottom: 4px;
-}
-
-main h3 {
-    font-family: Georgia, serif;
-}
-
-/* ÍNDICE DEL ARTÍCULO */
-
-main > nav {
-    display: table;
-    max-width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #a2a9b1;
-    background-color: #f8f9fa;
-    padding: 10px 20px;
-    margin: 20px 0;
-}
-
-main > nav h2 {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    border: 0;
-    margin: 0 0 8px;
-    padding: 0;
-    text-align: center;
-}
-
-main > nav ol {
-    margin: 0;
-    padding-left: 25px;
-}
-
-/* LISTAS GENERALES */
-
-li {
-    margin: 4px 0;
-}
-
-/* PIE DE PÁGINA */
-
-footer {
-    clear: both;
-    margin-left: 174px;
-    padding: 15px 25px;
-    background-color: white;
-    border-top: 1px solid #a2a9b1;
-    font-size: 13px;
-}
-
-/* ADAPTACIÓN A MÓVILES */
-
-@media (max-width: 700px) {
-
-    header {
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    main {
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    footer {
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    body > nav {
-        position: static;
-        width: auto;
-        margin: 10px 15px;
-        padding: 8px 0;
-        background-color: white;
-    }
-
-    main > div {
-        float: right;
-        width: 280px;
-        max-width: 48%;
-        margin: 0 0 15px 15px;
-    }
-
-    main > nav {
-        display: table;
-    }
-}
-
-@media (max-width: 450px) {
-
-    main > div {
-        float: none;
-        width: 100%;
-        max-width: 320px;
-        margin: 15px auto 20px;
-    }
-}
+    padding-bottom: 4px
