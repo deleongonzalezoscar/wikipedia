@@ -56,30 +56,25 @@ a {
     color: #0645ad;
     text-decoration: none;
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
-body > nav ul {
+body  nav ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
 }
 
-body > nav li {
+body  nav li {
     margin: 5px 0;
 }
 
-body > nav ul ul {
+body  nav ul ul {
     padding-left: 15px;
 }
 
-body > nav details {
+body  nav details {
     margin: 5px 0;
 }
 
-body > nav summary {
+body  nav summary {
     color: #0645ad;
     cursor: pointer;
 }
