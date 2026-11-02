@@ -104,38 +104,41 @@ main  h1 {
 main  h1  p {
     margin: 0 0 18px;
 }
-.contenido {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.contenido > div {
+main  div {
+    float: right;
     width: 300px;
-    flex-shrink: 0;
+    max-width: 100%;
+    box-sizing: border-box;
     background-color: white;
     border: 1px solid #a2a9b1;
     padding: 10px;
-    box-sizing: border-box;
+    margin: 0 0 20px 20px;
+    font-size: 14px;
+    line-height: 1.5;
 }
-
-.contenido > section {
-    flex: 1;
-    min-width: 0;
-}
-
-.contenido > div h3,
-.contenido > div h4 {
+main  div h3 {
+    text-align: center;
     background-color: #e3c16f;
-    padding: 8px;
+    border: 1px solid #c8a94f;
+    padding: 7px;
+    margin: 0 0 10px;
 }
-
-.contenido > div img {
+main  div img {
     display: block;
+    width: 200px;
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto 10px;
+}
+
+main  div h4 {
+    background-color: #e3c16f;
+    border: 1px solid #c8a94f;
+    padding: 5px;
+    margin: 12px 0 8px;
+}
+main  div p {
+    margin: 8px 0;
 }
 main h2 {
     font-family: Georgia, serif;
