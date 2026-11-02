@@ -24,3 +24,8 @@ body {
     display: block;
     margin: 8px;
 }
+vector-icon{
+    --font-size-medium: var(--font-size-medium, 1rem);
+    --line-height-medium: 1.6;
+    --line-height-content: 1.625;
+}
