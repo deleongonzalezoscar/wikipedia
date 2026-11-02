@@ -1,0 +1,26 @@
+ body{
+    font-family: sans-serif;
+ }
+ 
+ body {
+    height: 100%;
+ }
+ body {
+    background-color: var(--background-color-neutral-subtle, #f8f9fa);
+    color: var(--color-base, #202122);
+}
+body {
+    margin: 0;
+}
+::after{
+        animation-delay: -0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0ms !important;
+    }
+
+body {
+    display: block;
+    margin: 8px;
+}
