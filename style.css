@@ -1,5 +1,9 @@
 /* DISEÑO GENERAL */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     font-size: 14px;
@@ -12,7 +16,7 @@ body {
 /* CABECERA */
 
 header {
-    margin-left: 200px;
+    margin-left: 174px;
     padding: 18px 25px 10px;
     border-bottom: 1px solid #a2a9b1;
     background-color: white;
@@ -36,7 +40,7 @@ body > nav {
     position: absolute;
     top: 65px;
     left: 20px;
-    width: 160px;
+    width: 140px;
     padding: 10px 0;
     background-color: white;
     font-size: 14px;
@@ -103,10 +107,10 @@ body > nav summary {
 /* CONTENIDO PRINCIPAL */
 
 main {
-    margin-left: 200px;
+    margin-left: 174px;
     padding: 20px 25px 35px;
     background-color: white;
-    display: flow-root;
+    overflow: auto;
 }
 
 /* TÍTULO PRINCIPAL */
@@ -130,8 +134,9 @@ main > h1 + p {
 /* FICHA DE MARIANO */
 
 main > div {
-    float: none;
-    width: 300px;
+    float: right;
+    clear: right;
+    width: 280px;
     max-width: 100%;
     box-sizing: border-box;
     background-color: white;
@@ -225,12 +230,62 @@ li {
     margin: 4px 0;
 }
 
+/* PIE DE PÁGINA */
 
 footer {
     clear: both;
-    margin-left: 200px;
+    margin-left: 174px;
     padding: 15px 25px;
     background-color: white;
     border-top: 1px solid #a2a9b1;
     font-size: 13px;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 700px) {
+
+    header {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    footer {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    body > nav {
+        position: static;
+        width: auto;
+        margin: 10px 15px;
+        padding: 8px 0;
+        background-color: white;
+    }
+
+    main > div {
+        float: right;
+        width: 280px;
+        max-width: 48%;
+        margin: 0 0 15px 15px;
+    }
+
+    main > nav {
+        display: table;
+    }
+}
+
+@media (max-width: 450px) {
+
+    main > div {
+        float: none;
+        width: 100%;
+        max-width: 320px;
+        margin: 15px auto 20px;
+    }
 }
