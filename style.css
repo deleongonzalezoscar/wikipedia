@@ -218,3 +218,9 @@ vector-icon{
 (--border-color-progressive);
     --color-base--subtle: #54595d;
 }
+:root {
+    --image-size-small: 180px;
+    --image-size-standard: 250px;
+    --image-size-large :400px;
+    --image-size-user: var(--image-size-standard);
+}
