@@ -1,40 +1,43 @@
-    background-color: #f0d58a;
+   body{
+   background-color: #f0d58a;
     border: 1px solid #a2a9b1;
     padding: 10px;
     margin: 0 0 20px 20px;
     font-size: 14px;
 }
+main > div {
+    float: right;
+    width: 300px;
+    background-color: #f0d58a;
+    border: 1px solid #a2a9b1;
+    padding: 10px;
+    margin: 0 0 20px 20px;
+    box-sizing: border-box;
+}
 
-/* Nombre del futbolista en la ficha */
+main > div img {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 main > div h3 {
     text-align: center;
     background-color: #e3c16f;
-    border: 1px solid #c8a94f;
-    padding: 6px;
+    padding: 8px;
     margin-top: 0;
-    margin-bottom: 10px;
 }
 
-/* Foto */
-main > div img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto 10px;
-}
-
-/* Títulos Datos personales y Trayectoria */
 main > div h4 {
     background-color: #e3c16f;
-    border: 1px solid #c8a94f;
     padding: 5px;
-    margin: 12px 0 8px;
 }
 
-/* Texto de la ficha */
 main > div p {
+    font-size: 14px;
     margin: 8px 0;
-    line-height: 1.5;
 }
 
 /* Títulos de secciones */
