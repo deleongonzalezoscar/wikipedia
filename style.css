@@ -1,94 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: #202122;
-    margin: 30px;
-}
-
-h1 {
-    font-family: Georgia, serif;
-    font-size: 30px;
-    font-weight: normal;
-    border-bottom: 1px solid #a2a9b1;
-    padding-bottom: 10px;
-}
-
-h2 {
-    font-family: Georgia, serif;
-    font-size: 23px;
-    font-weight: normal;
-    border-bottom: 1px solid #a2a9b1;
-}
-
-p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-a {
-    color: #0645ad;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.ficha {
-    float: right;
-    width: 250px;
-    border: 1px solid #a2a9b1;
-    background-color: #f8f9fa;
-    padding: 10px;
-    margin: 10px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.indice {
-    border: 1px solid #a2a9b1;
-    background-color: #f8f9fa;
-    padding: 10px;
-    width: 250px;
-}
-
-li {
-    font-size: 14px;
-    margin: 5px;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #a2a9b1;
-}
-.ficha {
-    float: right;
-    width: 280px;
-    border: 1px solid #a2a9b1;
     background-color: #f0d58a;
+    border: 1px solid #a2a9b1;
     padding: 10px;
     margin: 0 0 20px 20px;
-    text-align: left;
+    font-size: 14px;
 }
 
-.ficha h3 {
+/* Nombre del futbolista en la ficha */
+main > div h3 {
     text-align: center;
     background-color: #e3c16f;
-    padding: 8px;
+    border: 1px solid #c8a94f;
+    padding: 6px;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.ficha img {
+/* Foto */
+main > div img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto 10px;
 }
 
-.ficha p {
+/* Títulos Datos personales y Trayectoria */
+main > div h4 {
+    background-color: #e3c16f;
+    border: 1px solid #c8a94f;
+    padding: 5px;
+    margin: 12px 0 8px;
+}
+
+/* Texto de la ficha */
+main > div p {
     margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Títulos de secciones */
+main h2 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    margin-top: 25px;
+}
+
+/* Subtítulos */
+main h3 {
+    font-family: Georgia, serif;
+}
+
+/* Texto general */
+p {
     font-size: 14px;
+}
+
+/* Índice de contenidos */
+main > nav {
+    display: table;
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+main > nav h2 {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    margin: 0 0 8px;
+    text-align: center;
+}
+
+main > nav ol {
+    margin: 0;
+    padding-left: 25px;
+}
+
+/* Listas */
+li {
+    margin: 4px 0;
+}
+
+/* Pie de página */
+footer {
+    clear: both;
+    border-top: 1px solid #a2a9b1;
+    margin-top: 30px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+/* En pantallas pequeñas, la ficha pasa arriba del texto */
+@media (max-width: 650px) {
+    body {
+        margin: 12px;
+    }
+
+    main > div {
+        float: none;
+        width: auto;
+        max-width: 320px;
+        margin: 15px auto 20px;
+    }
+
+    main > nav {
+        display: block;
+        max-width: 100%;
+    }
 }
